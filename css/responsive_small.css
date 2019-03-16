@@ -1,0 +1,15 @@
+@media screen and (max-width: 460px) { 
+    .filter-options {
+        height: 160px;
+    }
+
+    .filter-options {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 455px) { 
+    .select {
+        grid-template-columns: 1fr;
+    }
+}

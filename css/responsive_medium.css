@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) { 
+    
+    .filter-options {
+        height: 120px;
+    }
+
+    .filter-options h2 {
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) { 
+    .filter-options {
+        text-transform: uppercase;
+    }
+
+    #neighborhoods-select {
+        margin-left: 150px;
+      }
+      
+      #cuisines-select{
+        margin-right: 150px;
+      }
+}
