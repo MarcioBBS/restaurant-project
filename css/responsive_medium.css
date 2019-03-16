@@ -2,25 +2,25 @@
     
     .filter-options {
         height: 120px;
+        text-align: center;
     }
 
     .filter-options h2 {
         padding-top: 10px;
         font-size: 1.5rem;
     }
+
+    .filter-options select {
+        width: 40%;
+    }
     
 }
 
-@media screen and (min-width: 768px) { 
+@media only screen and (min-width : 768px) {
+
     .filter-options {
         text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
     }
-
-    #neighborhoods-select {
-        margin-left: 150px;
-      }
-      
-      #cuisines-select{
-        margin-right: 150px;
-      }
 }
