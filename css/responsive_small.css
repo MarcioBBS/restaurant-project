@@ -1,6 +1,6 @@
 @media screen and (max-width: 460px) { 
     .filter-options {
-        height: 160px;
+        height: 180px;
     }
 
     .filter-options {
@@ -13,6 +13,14 @@
 
     #footer strong {
         display: none;
+    }
+
+    #restaurants-list li h1 {
+        font-size: 12pt;
+    }
+
+    #restaurants-list li a {
+        width: 65%
     }
 }
 

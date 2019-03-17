@@ -207,6 +207,10 @@ nav h1 a {
   margin: 0;
   font-size: 11pt;
 }
+
+ul li p:first-of-type {
+  font-weight: 600;  
+}
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
@@ -218,6 +222,7 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: 80%;
 }
 
 /* ====================== Restaurant Details ====================== */
