@@ -13,8 +13,45 @@
     .filter-options select {
         width: 40%;
     }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper-map {
+        grid-area:wrapper-map;
+      }
+      
+    .wrapper-content {
+        grid-area: wrapper-content;
+    }
+
+    .inside #map-container {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+    }
     
-}
+    div.wrapper-map {
+        height: 25%
+    }
+
+    #restaurant-container {
+        padding: 660px 40px 30px;
+    }
+
+    .inside header {
+        z-index: 1500;
+    }
+
+    #breadcrumb {
+        padding: 10px 40px 16px;
+        list-style: none;
+        font-size: 17px;
+        margin: 0;
+        width: 100%
+    }
 
 @media only screen and (min-width : 768px) {
 
