@@ -52,12 +52,7 @@
     #restaurant-address {
         font-weight: 700;
         padding-bottom: 16px;
-    }
-
-    #breadcrumb li {
-        display: inline;
-        font-size: 12pt;
-    }    
+    }   
 
     #reviews-container {
         padding: 27px 10px 30px 10px;
@@ -68,6 +63,10 @@
         font-size: 11pt;
     }
 
+}
+
+@media screen and (max-width: 460px) {
+    
 }
 
 @media screen and (max-width: 320px) { 

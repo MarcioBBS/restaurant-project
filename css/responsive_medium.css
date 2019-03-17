@@ -1,5 +1,6 @@
 @media screen and (max-width: 768px) { 
     
+    /* Filter Options */
     .filter-options {
         height: 120px;
         text-align: center;
@@ -19,32 +20,44 @@
         grid-template-columns: 1fr;
     }
 
+    .wrapper-content {
+        grid-area: wrapper-content;
+    } 
+
+    /* Map */
+
     .wrapper-map {
         grid-area:wrapper-map;
       }
-      
-    .wrapper-content {
-        grid-area: wrapper-content;
-    }
 
     .inside #map-container {
         position: relative;
         width: 100%;
         margin-top: 50px;
     }
-    
+  
     div.wrapper-map {
-        height: 25%
+        height: 23%
     }
 
     #restaurant-container {
         padding: 660px 40px 30px;
     }
 
-    .inside header {
-        z-index: 1500;
+    /* Restaurant */
+    #restaurant-name {
+        text-align: center;
     }
 
+    #restaurant-hours td {        
+        font-size: 11pt;
+    }
+
+    #restaurant-hours td:first-child {
+        font-weight: bold;     
+    }
+
+    /* Breadcumb */
     #breadcrumb {
         padding: 10px 40px 16px;
         list-style: none;
@@ -52,6 +65,16 @@
         margin: 0;
         width: 100%
     }
+
+    #breadcrumb li {
+        display: inline;
+        font-size: 12pt;
+    } 
+
+    .inside header {
+        z-index: 1500;
+    }
+}    
 
 @media only screen and (min-width : 768px) {
 
