@@ -146,11 +146,27 @@ class DBHelper {
     return (`./restaurant.html?id=${restaurant.id}`);
   }
 
-  /**
-   * Restaurant image URL.
+   /**
+   * Restaurant image URL. It uses medium sized image as default
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    let url = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-medium.jpg`;
+    return url;
+  }
+
+   // Set the image srcset depending on the resolution
+  static imageSrcsetForRestaurant(restaurant) {
+    const imageSrc = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}`;
+    return `${imageSrc}-small.jpg 300w,
+            ${imageSrc}-medium.jpg 600w,
+            ${imageSrc}-large.jpg 800w`;
+  }
+
+  // It returns the value of image size
+  static imageSizesForRestaurant() {
+    return `(max-width: 360px) 280px,
+            (max-width: 600px) 600px,
+            400px`;
   }
 
   /**

@@ -3,11 +3,11 @@ import responsive from 'gulp-responsive';
 import del from 'del';
 import runSequence from 'run-sequence';
 
-// Create responsive images for jpg files
+// Create responsive images for jpg 
 gulp.task('jpg-images', function() {
   return gulp.src('images/**/*.jpg')
     .pipe(responsive({
-      // Resize all jpg images to three different sizes: 300, 600 and 800
+      // Resize all jpg images to: 300, 600 and 800
       '**/*.jpg': [{
         width: 800,
         quality: 70,
