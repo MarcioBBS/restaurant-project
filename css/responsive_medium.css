@@ -61,6 +61,10 @@
         font-weight: bold;     
     }
 
+    #reviews-list li p {        
+        font-size: 11pt;
+    }
+
     /* Breadcumb */
     #breadcrumb {
         padding: 10px 40px 16px;

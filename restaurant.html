@@ -32,17 +32,17 @@
       <header>
 
           <!--  Begin Focus & Skips -->
-          <a href="#restaurant-name" class="skip-link">Skip to main content</a>
+          <a href="#restaurant-name" class="skip-link" tabindex="1">Skip to main content</a>
           <!-- End Focus & Skips -->
        
           <!-- Beginning nav -->
         <nav>
-          <h1><a href="/" id="restaurant-label">Restaurant Reviews</a></h1>
+          <h1><a href="/" id="restaurant-label" tabindex="2">Restaurant Reviews</a></h1>
         </nav>
        
         <!-- Beginning breadcrumb -->
         <ul id="breadcrumb" aria-label="Breadcrumb" >
-          <li><a href="/">Home</a></li>
+          <li><a href="/" tabindex="3">Home</a></li>
         </ul>
         <!-- End breadcrumb -->      
         <!-- End nav -->
@@ -72,7 +72,7 @@
 
       <!-- Beginning footer -->
       <footer id="footer" class="footer-review">
-        Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+        Copyright (c) 2017 <strong>Restaurant Reviews</strong> All Rights Reserved.
       </footer>
       <!-- End footer -->
     </div>
@@ -81,7 +81,7 @@
      <!-- Beginning map -->
      <div class="wrapper-map">     
         <section id="map-container" role="application" aria-label="Mapbox Maps">
-           <div id="map" aria-labelledby="map-container"></div>
+           <div id="map" tabindex="4" aria-labelledby="map-container"></div>
          </section>      
      </div>  
        <!-- End map -->
