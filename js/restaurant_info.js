@@ -96,6 +96,9 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
 
+  // const restaurantLabel = document.querySelector('#restaurant-label');
+  // restaurantLabel.setAttribute('aria-label', `Review of ${restaurant.name}`);
+
   // fill operating hours
   if (restaurant.operating_hours) {
     fillRestaurantHoursHTML();
@@ -186,7 +189,7 @@ fillBreadcrumb = (restaurant=self.restaurant) => {
 getParameterByName = (name, url) => {
   if (!url)
     url = window.location.href;
-  name = name.replace(/[\[\]]/g, '\\$&');
+  name = name.replace(/[\[\]]/g, '\\$&');           
   const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`),
     results = regex.exec(url);
   if (!results)

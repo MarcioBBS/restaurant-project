@@ -22,7 +22,9 @@
 <body>
   
     <header>
-      <a href="#filter-options" class="skip-link">Skip to main content</a>
+      <div>
+          <a href="#filter-options" class="skip-link">Skip to main content</a>
+      </div>      
       <nav>
         <h1><a href="/">Restaurant Reviews</a></h1>
       </nav>
@@ -42,17 +44,16 @@
       
         <h2>Filter Results</h2>
           <div class=" select">
-            <select aria-label="Filter by neighborhood" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+            <select aria-label="Filter by neighborhood" aria-controls="restaurants-list" id="neighborhoods-select" name="neighborhoods"  onchange="updateRestaurants()">
               <option value="all">All Neighborhoods</option>
             </select>
-            <select aria-label="Filter by cuisine" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+            <select aria-label="Filter by cuisine" aria-controls="restaurants-list" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
               <option value="all">All Cuisines</option>
             </select>
           </div>  
-        </div>
-        <!-- <div class=filter-half></div> -->
+        </div>        
         <div>
-          <ul id="restaurants-list"></ul>
+          <ul id="restaurants-list" role="region" aria-live="polite" aria-atomic="true"></ul>
         </div>  
       </section>
 

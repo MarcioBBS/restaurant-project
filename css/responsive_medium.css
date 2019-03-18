@@ -24,6 +24,10 @@
         grid-area: wrapper-content;
     } 
 
+    .footer-review a{
+        display:none;
+    }
+
     /* Map */
 
     .wrapper-map {
