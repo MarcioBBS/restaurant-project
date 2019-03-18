@@ -87,11 +87,14 @@ initMap = () => {
           'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         id: 'mapbox.streets'
       }).addTo(newMap);
-
-  } catch(error) {
-    console.log("The map couldn't be initialized", error);
-  }
-}  
+    } catch(error) {
+      console.log("The map couldn't be initialized", error);
+      // It fills the map content with a custom message. 
+      DBHelper.mapOffline();
+    }
+  } else {
+    DBHelper.mapOffline();
+  } 
 
   updateRestaurants();
 }
