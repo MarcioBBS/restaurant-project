@@ -22,6 +22,7 @@
 <body>
   
     <header>
+      <a href="#filter-options" class="skip-link">Skip to main content</a>
       <nav>
         <h1><a href="/">Restaurant Reviews</a></h1>
       </nav>
@@ -32,17 +33,20 @@
         <div id="map"></div>
       </section>
       <section>
-        <div class="filter-options">
-
+        
+        <!-- Begin Focus & Skips -->
+        <div id="filter-options" class="filter-options">
+        <!-- End Focus & Skips -->  
+        
           <h2>Filter Results</h2>
-            <div class=" select">
-              <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-                <option value="all">All Neighborhoods</option>
-              </select>
-              <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-                <option value="all">All Cuisines</option>
-              </select>
-            </div>  
+          <div class=" select">
+            <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+              <option value="all">All Neighborhoods</option>
+            </select>
+            <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+              <option value="all">All Cuisines</option>
+            </select>
+          </div>  
         </div>
         <!-- <div class=filter-half></div> -->
         <div>

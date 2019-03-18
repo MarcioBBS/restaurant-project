@@ -230,6 +230,10 @@ ul li p:first-of-type {
   width: 80%;
 }
 
+#restaurants-list li a:hover, #restaurants-list li a:focus {
+  background-color: #445968;
+}
+
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: fixed;
@@ -317,4 +321,25 @@ ul li p:first-of-type {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* Focus & Skips */
+.skip-link {
+  display: block;
+  position: absolute;
+  background-color: white;
+  color: grey;
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.skip-link:focus {
+  color: #445968;
+  position:static; 
+  width:auto; 
+  height:auto;
 }
