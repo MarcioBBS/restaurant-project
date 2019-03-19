@@ -91,4 +91,13 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* Restaurant */
+    #restaurant-name {
+        margin-top: 45px;
+    }
+
+    .rest-breadcrumb {
+        margin-top: 100px;
+    }
 }
