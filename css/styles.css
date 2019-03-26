@@ -215,6 +215,11 @@ nav h1 a {
 
 ul li p:first-of-type {
   font-weight: 600;  
+  font-size: 1.2em;
+  border: 2px solid orange;
+  background-color: #ffce73;
+  padding: 10px;
+  border-radius: 15px 0 0 0;
 }
 #restaurants-list li a {
   background-color: orange;
@@ -314,7 +319,7 @@ ul li p:first-of-type {
   overflow: hidden;
   padding: 15px 20px 20px;
   position: relative;
-  border-radius: 5%;
+  border-radius: 20px 0 0 0;;
 }
 #reviews-list li p {
   margin: 0 0 10px;
