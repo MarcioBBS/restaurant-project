@@ -85,6 +85,7 @@
     #restaurant-name {
         font-size : 15pt;
         text-align: center;
+        margin-top: 79px;
     }
 
     #reviews-container {
@@ -95,4 +96,12 @@
         border-top: 1px solid #333333;
         border-bottom: 1px solid #333333;
     }    
+
+    .nav-restaurant {
+        height: 137px;
+    }
+
+    .rest-breadcrumb {
+        height: 20px;   
+    }
 }

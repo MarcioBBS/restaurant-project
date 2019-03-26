@@ -82,6 +82,14 @@
     .inside header {
         z-index: 1500;
     }
+
+    .nav-restaurant {
+        height: 94px;
+    }
+
+    .rest-breadcrumb {
+        height: 20px;   
+    }
 }    
 
 @media only screen and (min-width : 768px) {
@@ -93,11 +101,29 @@
     }
 
     /* Restaurant */
+    .label-review {       
+        height: 9px !important;
+    }
+
     #restaurant-name {
-        margin-top: 45px;
+        margin-top: 51px;
+    }
+
+    .nav-restaurant {
+        height: 63px;
     }
 
     .rest-breadcrumb {
-        margin-top: 100px;
+        height: 20px;   
+    }
+
+    nav h1 #restaurant-label {
+        margin: auto;
+        margin-top: 25px;
+    }
+  
+    #breadcrumb {
+        margin-top:71px;
+        background-color: #d2c1bb;
     }
 }

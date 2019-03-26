@@ -15,16 +15,16 @@ self.addEventListener('install', function(event) {
           '/', 
           '/restaurant.html',
           '/css/styles.css',
-          'css/responsive_large.css',
-          'css/responsive_medium.css',
-          'css/responsive_small.css',          
+          '/css/responsive_large.css',
+          '/css/responsive_medium.css',
+          '/css/responsive_small.css',          
           '/js/dbhelper.js',
           '/js/secret.js',
           '/js/main.js',
           '/js/restaurant_info.js',
-          'js/register-sw.js', 
-          'data/restaurants.json',
-          'images/favicon.png'          
+          '/js/register-sw.js', 
+          '/data/restaurants.json',
+          '/images/favicon.png'          
         ]);
       })
     );
